@@ -12,5 +12,14 @@ export default nuxt(
             },
             yaml: false,
         },
+        {
+            files: ['**/*.vue'],
+            rules: {
+                'vue/padding-line-between-tags': [
+                    'error',
+                    [{ blankLine: 'always', next: '*', prev: '*' }],
+                ],
+            },
+        },
     ),
 )
